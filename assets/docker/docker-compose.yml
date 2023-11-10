@@ -12,7 +12,7 @@ services:
             - test_postgres_data:/var/lib/postgresql/data
         environment:
             POSTGRES_DB: development_db
-            POSTGRES_USER: ${POSTGRES_USER:-postgres}
-            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres_password}
+            POSTGRES_USER: user
+            POSTGRES_PASSWORD: password
         ports:
             - "5432:5432"
